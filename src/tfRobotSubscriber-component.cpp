@@ -20,11 +20,11 @@ TfRobotSubscriber::TfRobotSubscriber(std::string const& name)
 	this->addProperty("datasize", datasize)
 		.doc("data size");
 
-	this->addPort("inCartesianState",entree)
-		.doc("kinematic chain of the robot");
+	//this->addPort("inCartesianState",entree)
+	//	.doc("kinematic chain of the robot");
 
 	this->addEventPort("inCartesianState", entree);
-	this->addPort("size",size);
+	//this->addPort("size",size);
 	this->addEventPort("size",size);
 
 	std::cout << "TfRobotSubscriber constructed !" <<std::endl;
